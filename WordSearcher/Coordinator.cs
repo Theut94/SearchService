@@ -4,7 +4,7 @@ using System.Data.Common;
 
 public class Coordinator
 {
-    private IDictionary<string, DbConnection> ConnectionCache = new Dictionary<string, IDbConnection>();
+    private IDictionary<string, DbConnection> ConnectionCache = new Dictionary<string, DbConnection>();
     private const string DOCUMENT_DB = "document-db";
     private const string OCCURRENCE_DB = "occurrence-db";
     private const string SHORT_WORD_DB = "short-word-db";
